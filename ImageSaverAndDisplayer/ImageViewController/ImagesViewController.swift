@@ -20,7 +20,7 @@ class ImagesViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    
+    /// Getting data from the server, check if images are available in database, then fetch
     func getImages()  {
         SVProgressHUD.show()
         APIRequest.getImages { [weak self] (result) in
@@ -87,8 +87,7 @@ extension ImagesViewController:UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? ImageCell
         let image = storedImages[indexPath.row]
         cell?.fillCellWithImage(image: image.image)
-        
         return cell!
-}
+    }
 }
 

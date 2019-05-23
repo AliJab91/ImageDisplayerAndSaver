@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		26869D51A2B34B57DB5387E8 /* Pods_ImageSaverAndDisplayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7A4B3FFE1504C848C137774 /* Pods_ImageSaverAndDisplayer.framework */; };
 		4E77E2332297286F00281D4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E77E2322297286F00281D4D /* AppDelegate.swift */; };
-		4E77E2352297286F00281D4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E77E2342297286F00281D4D /* ViewController.swift */; };
 		4E77E2382297286F00281D4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E77E2362297286F00281D4D /* Main.storyboard */; };
 		4E77E23B2297286F00281D4D /* ImageSaverAndDisplayer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4E77E2392297286F00281D4D /* ImageSaverAndDisplayer.xcdatamodeld */; };
 		4E77E23D2297287100281D4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E77E23C2297287100281D4D /* Assets.xcassets */; };
@@ -41,7 +40,6 @@
 		1B00B4278CF19E523406DFF7 /* Pods-ImageSaverAndDisplayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageSaverAndDisplayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ImageSaverAndDisplayer/Pods-ImageSaverAndDisplayer.debug.xcconfig"; sourceTree = "<group>"; };
 		4E77E22F2297286F00281D4D /* ImageSaverAndDisplayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageSaverAndDisplayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E77E2322297286F00281D4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4E77E2342297286F00281D4D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4E77E2372297286F00281D4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4E77E23A2297286F00281D4D /* ImageSaverAndDisplayer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ImageSaverAndDisplayer.xcdatamodel; sourceTree = "<group>"; };
 		4E77E23C2297287100281D4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -125,7 +123,6 @@
 				4E77E26C22972CE200281D4D /* Extensions */,
 				4E77E26322972B4F00281D4D /* ImageViewController */,
 				4E77E2322297286F00281D4D /* AppDelegate.swift */,
-				4E77E2342297286F00281D4D /* ViewController.swift */,
 				4E77E2362297286F00281D4D /* Main.storyboard */,
 				4E77E23C2297287100281D4D /* Assets.xcassets */,
 				4E77E23E2297287100281D4D /* LaunchScreen.storyboard */,
@@ -371,7 +368,6 @@
 			files = (
 				4E77E26522972B5D00281D4D /* ImagesViewController.swift in Sources */,
 				4E77E25822972AF200281D4D /* CoredataRequests.swift in Sources */,
-				4E77E2352297286F00281D4D /* ViewController.swift in Sources */,
 				4E77E25C22972B2100281D4D /* JSONKeys.swift in Sources */,
 				4E77E26222972B4500281D4D /* Extensions.swift in Sources */,
 				4E77E23B2297286F00281D4D /* ImageSaverAndDisplayer.xcdatamodeld in Sources */,

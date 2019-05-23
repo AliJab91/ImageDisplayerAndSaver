@@ -12,40 +12,30 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ImageCell" customModule="ImageSaver" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="106" height="143"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ImageCell" customModule="ImageSaverAndDisplayer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="106" height="140"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="106" height="143"/>
+                <rect key="frame" x="0.0" y="0.0" width="106" height="140"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2ow-5W-bQv">
-                        <rect key="frame" x="0.0" y="0.0" width="106" height="113"/>
+                        <rect key="frame" x="0.0" y="0.0" width="106" height="140"/>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NeG-oA-A9R">
-                        <rect key="frame" x="4" y="116" width="98" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                 </subviews>
             </view>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="NeG-oA-A9R" secondAttribute="trailing" constant="4" id="0xY-gH-A6O"/>
-                <constraint firstItem="NeG-oA-A9R" firstAttribute="top" secondItem="2ow-5W-bQv" secondAttribute="bottom" constant="3" id="7Ee-ky-rmA"/>
-                <constraint firstAttribute="bottom" secondItem="NeG-oA-A9R" secondAttribute="bottom" constant="6" id="9Bp-DG-Dne"/>
-                <constraint firstItem="2ow-5W-bQv" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Enp-YT-16Q"/>
-                <constraint firstAttribute="trailing" secondItem="2ow-5W-bQv" secondAttribute="trailing" id="Ncb-8r-tqT"/>
-                <constraint firstItem="2ow-5W-bQv" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="TfK-hX-OAq"/>
-                <constraint firstItem="NeG-oA-A9R" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="4" id="UGo-wz-lI6"/>
+                <constraint firstItem="2ow-5W-bQv" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="4bO-xl-zzf"/>
+                <constraint firstItem="2ow-5W-bQv" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="96l-53-rIe"/>
+                <constraint firstAttribute="bottom" secondItem="2ow-5W-bQv" secondAttribute="bottom" id="Efm-gt-YwD"/>
+                <constraint firstAttribute="trailing" secondItem="2ow-5W-bQv" secondAttribute="trailing" id="jzC-LY-0Jd"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
-            <size key="customSize" width="106" height="143"/>
+            <size key="customSize" width="106" height="140"/>
             <connections>
-                <outlet property="imageTitleLabel" destination="NeG-oA-A9R" id="9a3-O7-ufa"/>
                 <outlet property="imageView" destination="2ow-5W-bQv" id="aFG-AY-mG3"/>
             </connections>
-            <point key="canvasLocation" x="178.2608695652174" y="163.72767857142856"/>
+            <point key="canvasLocation" x="178.2608695652174" y="162.72321428571428"/>
         </collectionViewCell>
     </objects>
 </document>

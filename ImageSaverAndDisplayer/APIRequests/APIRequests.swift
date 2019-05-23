@@ -7,7 +7,7 @@
 //
 
 import Alamofire
-
+/// Generating Errors
 enum ResponseError: Error {
     case serverError
     case clientError
@@ -45,7 +45,7 @@ class  APIRequest {
         }
     }
     
-    
+    /// Getting images from the server
     static func getImages(completion: @escaping (Swift.Result<[Image], ResponseError>) -> Void) {
         getRequest(urlString: .imageURL, parameters: nil, headers: nil) { (result) in
             switch result {

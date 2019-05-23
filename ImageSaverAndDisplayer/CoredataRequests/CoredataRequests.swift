@@ -21,13 +21,12 @@ extension AppDelegate {
 }
 
 class CoredataRequests {
-    
+    /// getting image from url using kingfisher
     private static func imageFromUrl(_ urlString: String, completion: @escaping (UIImage?) -> Void) {
         guard let url = URL(string: urlString) else {
             completion(nil)
             return
         }
-        
         ImageDownloader.default.downloadImage(with: url, options: nil, progressBlock: nil) { (result) in
             switch result {
             case .failure(let error):
@@ -50,13 +49,12 @@ class CoredataRequests {
                 dispatchGroup.leave()
             }
         }
-        
         dispatchGroup.notify(queue: .main) {
             completion(errors)
         }
-        
     }
     
+    /// save image locally
     private static func saveImage(_ image: Image, completion: @escaping (ImageSaveError?) -> Void) {
         let context = AppDelegate.shared.persistentContainer.viewContext
         let newImage = NSEntityDescription.insertNewObject(forEntityName: CoreDataKeys.Images.rawValue, into: context)
@@ -82,7 +80,7 @@ class CoredataRequests {
         }
     }
     
-    
+    /// Fetching all images
     static func getAllImages () -> [ImageStored] {
         let context = AppDelegate.shared.persistentContainer.viewContext
         let request = NSFetchRequest<NSFetchRequestResult>(entityName:CoreDataKeys.Images.rawValue)
@@ -106,6 +104,7 @@ class CoredataRequests {
         return []
     }
     
+    /// Check if image is in database
     static func checkIfImageIsStored(_ imageId: Int, completion:@escaping(Bool) ->Void) {
         let context = AppDelegate.shared.persistentContainer.viewContext
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: CoreDataKeys.Images.rawValue)
